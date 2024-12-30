@@ -1,0 +1,50 @@
+.Parent-div{
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10%;
+}
+.child{
+    width: 25vw;
+    height: 400px;
+    margin: 3vw;
+    text-align: justify;
+    padding: 10px;
+    overflow: hidden;
+    /* font-family: Arial, sans-serif; */
+}
+.child:hover{
+    background-color: rgb(235, 227, 227);
+    color: rgb(224, 17, 52);
+    transition: 1s ease-in;
+}
+
+@media (max-width:990px){
+    .Parent-div{
+        flex-wrap: wrap;
+    }
+    .child{
+     
+        width: 35vw;
+        height: 400px;
+        margin: 3vw;
+        text-align: justify;
+        padding: 10px;
+    }
+}
+
+@media (max-width:990px){
+    .Parent-div{   
+        flex-direction: column;
+    }
+    .child{
+        width: 70vw;
+        height: 400px;
+        margin: 3vw;
+        text-align: justify;
+        padding: 10px;
+    }
+
+}

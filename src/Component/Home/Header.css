@@ -1,0 +1,118 @@
+.main_nav {
+    border: 2px solid black;
+    background-color: rgba(15, 14, 14, 0.966);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+    position: sticky;
+    /* z-index: 1000; */
+    top: 0px;
+}
+
+.imgg {
+    width: 200px;
+    margin-left: 3vw;
+}
+
+.li-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 2vw;
+}
+
+.li-item li {
+    list-style: none;
+}
+
+.li-item li a {
+    color: aliceblue;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+
+.nav-item .dropdown-menu {
+    top: 100%;
+    left: 50%;
+    /* transform: translateX(-50%); */
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    min-width: 150px;
+    /* z-index: 1001; */
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    color: white;
+}
+
+.dropdown:hover{
+    color: rgb(238, 24, 17);
+    background-color: rgb(214, 184, 184);
+}
+.span {
+    display: none;
+}
+
+.menu-items{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(12, 9, 9);
+    color: white;
+    position: relative;
+    bottom: 60px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+} 
+.Home a{
+    font-family: Arial, sans-serif;
+    color: white;
+    text-decoration: none;
+}
+.Home a:hover{
+    font-family: Arial, sans-serif;
+    background-color: rgb(212, 15, 15);
+    text-decoration: none;
+}
+@media (max-width: 970px) {
+    .li-item {
+        display: none;
+    }
+
+    .li-item.responsive-visible {
+        display: flex;
+        flex-direction: column;
+      
+        background-color: black;
+        color: white;
+        width: 100%;
+        position: absolute;
+        top:70px;
+       
+    }
+
+    .span {
+        display: flex;
+        align-items: center;
+        margin-right: 3vw;
+        border: 2px solid white;
+        color: aliceblue;
+    }
+    canvas[style*="z-index: 1000000000"] {
+        display: none;
+    }
+    .toggles{
+        display: none;
+    }
+    .imgg {
+        width: 200px;
+        margin-left: 3vw;
+    }
+   
+    
+    
+}
